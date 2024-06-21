@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+:root{
+    scroll-behavior: smooth;
+    --bgc:#ffffff;
+    --bgc2:#F8F9FA;
+    --highlighter:#EEF0F1;
+    --span-color:#1EC997;
+}
+body{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: weight , bold;
+    font-style: normal;
+}
+span{
+    color: var(--span-color);
+}
+
+nav{
+    font-family: "Playfair Display", serif;
+}
+nav a{
+    color: var(--highlighter);
+}
+.navbar-brand{
+    color: var(--span-color);
+    font-family: fantasy;
+    font-size: 20px;
+}
+.nav-link{
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.nav-link a{
+    float: left;
+    display: block;
+    text-align: center;
+    color: var(--highlighter);
+    padding: 14px;
+    font-size:17px;
+    border-bottom: 13px solid transparent;
+}
+.nav-link:hover{
+    color: var(--bgc2);
+}
+.nav-item a:hover{
+    border-bottom: 3px solid var(--span-color);
+}
+.nav-item a.active{
+    color: var(--span-color);
+}
+/* .nav-item a{
+    color: #fff;
+
+} */
+.nav-item a:hover{
+    color: var(--span-color);
+}
+
+
+/* -------------- end navbar ---------------- */
+.Bg-image{
+    background-image: url(../image/mfy1-780x470-1-768x470.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.opcImg{
+    background-color: rgba(0, 0,0,0.4);
+}
+#Home{
+    padding-top: 250px;
+}
+
+.move::after{
+    content: "|";
+    animation-name: wafaa;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes wafaa {
+    0%{content: "W|";}
+    2%{content: "We|";}
+    4%{content: "Web|";}
+    6%{content: "Web |";}
+    8%{content: "Web D|";}
+    10%{content: "Web De|";}
+    12%{content: "Web Dev|";}
+    14%{content: "Web Deve|";}
+    16%{content: "Web Devel|";}
+    18%{content: "Web Develo|";}
+    20%{content: "Web Develop|";}
+    22%{content: "Web Develope|";}
+    24%{content: "Web Developer|";}
+    26%{content: "Web Develope|";}
+    28%{content: "Web Develop|";}
+    30%{content: "Web Develo|";}
+    32%{content: "Web Devel|";}
+    34%{content: "Web Deve|";}
+    36%{content: "Web Dev|";}
+    38%{content: "Web De|";}
+    40%{content: "Web D|";}
+    42%{content: "Web |";}
+    44%{content: "Web|";}
+    46%{content: "We|";}
+    48%{content: "W|";}
+    50%{content: "F|";}
+    52%{content: "Fr|";}
+    54%{content: "Fre|";}
+    54%{content: "Free|";}
+    56%{content: "Freel|";}
+    58%{content: "Freela|";}
+    60%{content: "Freelan|";}
+    62%{content: "Freelanc|";}
+    64%{content: "Freelance|";}
+    66%{content: "Freelancer|";}
+    68%{content: "Freelance|";}
+    70%{content: "Freelanc|";}
+    72%{content: "Freelan|";}
+    74%{content: "Freela|";}
+    76%{content: "Freel|";}
+    78%{content: "Free|";}
+    80%{content: "Fre|";}
+    82%{content: "Fr|";}
+    84%{content: "F|";}
+    86%{content: "|";}
+}
+.head button{
+    width: 145px;
+    height: 48px;
+    border: 2px solid var(--span-color);
+    font-size: 14px;
+    font-weight: bold;
+    background-color:transparent;
+    border-radius: 50px;
+    opacity: 0.9;
+    color: var(--span-color);
+    margin-top: 5px;
+}
+.head button:hover{
+    background-color: var(--span-color);
+    color: var(--bgc);
+}
+.arrow{
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+@keyframes arrow {
+    0%{margin-top: 10px;}
+    20%{margin-top: 20px;}
+    40%{margin-top: 40px;} 
+    600% {margin-bottom: 40px;}
+    80%{margin-bottom: 20px;}
+    100%{margin-bottom: 10px;}
+}
+/*end first section*/
+
+/*start second section*/
+#About{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--bgc);
+    align-items: center;
+    justify-content: center;
+}
+.highlighter{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.highlighter h1{
+    font-size: 80px;
+    font-weight: 800px;
+    color: var(--highlighter);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+.highlighter h2{
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 800px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    color: #000;   
+}
+.highlighter h2::after{
+    content:''; 
+    position: absolute;
+    text-align: center;
+    background-color: var(--span-color);
+    height: 3px;
+    top: 45px;
+    left: 47%;
+    width: 55px;
+    height: 2px;
+}
+.about-side{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*..........*/
+.article-right p{
+    position: relative;
+    padding-left: 18px;
+}
+.article-right p::after{
+    content:''; 
+    position: absolute;
+    text-align: center;
+    background-color: rgb(233, 224, 224);
+    height: 2px;
+    top: 28px;
+    left: 0%;
+    width: 500px;
+    height: 1px;
+}
+.btn{
+    width: 145px;
+    height: 48px;
+    border: 2px solid var(--span-color);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: var(--bgc);
+    background-color: var(--span-color);
+
+}
+.btn:hover{
+    box-shadow: 2px 1px 7px 1px gray;
+}
+/* .clear{
+    clear: both;
+} */
+/* .all-counters{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+.counters{
+    width: 25%;
+    text-align: center;
+    justify-content: space-between;
+    color:  rgb(142, 131, 131);
+    margin-bottom: 80px;
+}
+h4{
+    font-size: 65px;
+    position: relative;
+}
+h4::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(235, 227, 227);
+    top: 30%;
+    right: 0px;
+    width: 1px;
+    height: 100px;
+}
+h4::after{
+    content: "+";
+    animation-name: counter;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes counter {
+    0%{content: "1+";}
+    20%{content: "4+";}
+    40%{content: "6+";}
+    60%{content: "8+";}
+    80%{content: "10+";}
+    100%{content: "12+";}
+}
+.counter1::after{
+    content: "+";
+    animation-name: counter1;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes counter1{
+    0%{content: "21+";}
+    20%{content: "24+";}
+    40%{content: "26+";}
+    60%{content: "28+";}
+    80%{content: "29+";}
+    100%{content: "210+";}
+}
+.counter2::after{
+    content: "+";
+    animation-name: counter2;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes counter2{
+    0%{content: "62+";}
+    20%{content: "64+";}
+    40%{content: "66+";}
+    60%{content: "67+";}
+    80%{content: "68+";}
+    100%{content: "610+";}
+}
+.counter3::after{
+    content: "+";
+    animation-name: counter3;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes counter3 {
+    0%{content: "32+";}
+    20%{content: "35+";}
+    40%{content: "36+";}
+    60%{content: "38+";}
+    80%{content: "39+";}
+    100%{content: "312+";}
+}
+
+/************* end About ******************/
+
+/********** start services side *****************/
+#What-I-Do{
+    cursor: pointer;
+}
+#what-I-Do h2{
+    font-size: 28px;
+}
+#What-I-Do p{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.service{
+    display: flex;
+    padding: 10px;
+}
+.service:hover{
+    top: 30%;
+    right: 10%;
+    
+}
+
+.service-leef{
+    float: left;
+    padding-left: 30px;
+}
+.service-rig{
+    display: flex;
+    padding: 10px;
+}
+.service-rrig{
+    float: right;
+    padding-left: 30px;
+}
+.services-rrig:hover{
+    top: 30%;
+    left: 5%;
+}
+.image-square{
+    width: 70px;
+    height: 50px;
+    transform: perspective(75em);
+    box-shadow: 2px 5px  10px 3px  gray;
+    border-radius: 4px;
+    border: 0.5px solid;
+    border-color:rgb(184, 194, 204);
+}
+.image-square img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleColorChange{
+    color: var(--span-color);
+}
+
+/**************** end services side ***************/
+
+/**************** start resume side ************/
+#Resume{
+
+    background-color: var(--bgc);
+}
+.cardSum:hover{
+    border: 2px solid gray;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px 3px gray;
+    
+    
+
+}
+.imgsum{
+    transition: all 3s;
+    cursor: pointer;
+}
+.imgsum:hover{
+    bottom: 5%;
+    left: 3%;
+}
+.progress-bar{
+    background-color: var(--span-color);
+}
+.progress .prog1{
+    width: 90%;
+    animation-name: prog1;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+@keyframes prog1 {
+    0%{width: 50%;}
+    30%{width: 60%;}
+    60%{width: 70%;}
+    90%{width: 80%;}
+    100%{width: 90%;}
+}
+.progress .prog2{
+    width: 90%;
+    animation-name: prog2;
+    animation-duration:1.9s;
+    animation-iteration-count: infinite;
+}
+@keyframes prog2 {
+    0%{width: 40%;}
+    30%{width: 50%;}
+    60%{width: 60%;}
+    90%{width: 70%;}
+    100%{width: 80%;}
+}
+.progress .prog3{
+    width: 50%;
+    animation-name: prog3;
+    animation-duration:1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes prog3 {
+    0%{width: 10%;}
+    30%{width: 20%;}
+    60%{width: 30%;}
+    90%{width: 40%;}
+    100%{width: 50%;}
+}
+.progress .prog4{
+    width: 50%;
+    animation-name: prog4;
+    animation-duration:1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes prog4 {
+    0%{width: 20%;}
+    20%{width: 40%;}
+    40%{width: 40%;}
+    60%{width: 50%;}
+    80%{width: 60%;}
+    100%{width: 70%;}
+}
+.progress .prog5{
+    width: 50%;
+    animation-name: prog5;
+    animation-duration:1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes prog5 {
+    0%{width: 9%;}
+    30%{width: 29%;}
+    40%{width: 39%;}
+    50%{width: 49%;}
+    60%{width: 59%;}
+    70%{width: 69%;}
+    80%{width: 79%;}
+    90%{width: 89%;}
+    100%{width: 99%;}
+}
+/**************** end resume side ***********************/
+
+/******************* start Protfolio side **********************/
+#Protfolio{
+    background-color: var(--bgc2);
+}
+.proUl{
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cards1{
+    border: 8px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.cards1:hover .card-bodyy{
+    right: 0;
+}
+.card-img{
+    border-radius: 15px;
+}
+.card-bodyy{
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgb(0, 0, 0,0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    padding-top: 220px;
+    transition: 2s;
+    border-radius: 15px;
+}
+.card-titles{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+.sub-titles{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 300;
+}
+.bttn{
+    height: 40px;
+    width: 100px;
+    text-transform: capitalize;
+    background-color: #1ec996a0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+}
+
+.proUl li{
+    padding-right: 30px;
+    padding-top: 40px;
+}
+.proUl li a{
+    text-decoration: none;
+    color: #000;
+}
+.proUl li a.active{
+    border-bottom: 2px solid gray;
+}
+.proUl a.active:hover{
+    border-bottom:2px solid var(--span-color);
+}
+.proUl li a:hover{
+    border-bottom: 2px solid var(--span-color);
+}
+
+/******************* end Protfolio side **********************/
+.checked {
+    color: orange;
+}
+/* .details{
+    padding: 20px;
+} */
+
+/* end client side*/
+
+/* start Contact side*/
+#Contact{
+    padding-top: 50px;
+    background-color: var(--bgc2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* end Contact side*/
+
+/*footer*/
+footer{
+    height: 50px;
+    padding-top: 3px;
+    margin: auto;    
+    background-color: var(--bgc);
+}
